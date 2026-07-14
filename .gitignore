@@ -1,0 +1,5 @@
+# macOS
+.DS_Store
+
+# Claude Code project infrastructure (local tooling, not part of the extension)
+.claude/

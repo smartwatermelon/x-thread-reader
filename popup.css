@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  width: 270px;
+  color: #18212f;
+  font:
+    14px/1.45 system-ui,
+    sans-serif;
+}
+main {
+  display: grid;
+  gap: 12px;
+  padding: 16px;
+}
+strong {
+  font-size: 16px;
+}
+label {
+  display: flex;
+  gap: 8px;
+  align-items: start;
+}
+button {
+  border: 0;
+  border-radius: 8px;
+  background: #111827;
+  color: white;
+  cursor: pointer;
+  padding: 9px 12px;
+  font: inherit;
+}
+button:disabled {
+  cursor: default;
+  opacity: 0.45;
+}
+p {
+  margin: 0;
+  color: #64748b;
+  font-size: 12px;
+}

@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "X Thread Reader (Twitter Thread)",
+  "version": "0.1.0",
+  "description": "Automatically opens public X posts in Twitter Thread's reader.",
+  "permissions": ["storage", "tabs", "webNavigation"],
+  "host_permissions": [
+    "*://x.com/*",
+    "*://twitter.com/*",
+    "https://twitter-thread.com/*"
+  ],
+  "background": { "service_worker": "background.js", "type": "module" },
+  "action": {
+    "default_title": "Open in X Thread Reader",
+    "default_popup": "popup.html"
+  }
+}
