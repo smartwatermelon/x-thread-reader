@@ -1,5 +1,45 @@
 # X Thread Reader (unpacked extension)
 
+> ## ⚠️ Deprecated — use StopTheMadness Pro instead
+>
+> This extension is retired and the repo is archived. A URL-rewrite rule in
+> [StopTheMadness Pro](https://apps.apple.com/us/app/stopthemadness-pro/id6471380298)
+> does the same job with no custom extension code to maintain.
+>
+> The reader is now [unrollnow.com](https://unrollnow.com), which takes a
+> status URL as `https://unrollnow.com/status/<id>`.
+>
+> ### Set it up (about 2 minutes)
+>
+> 1. Install [StopTheMadness Pro](https://apps.apple.com/us/app/stopthemadness-pro/id6471380298)
+>    and enable its browser extension.
+> 2. Add a URL replacement rule with this regular expression:
+>
+>    ```text
+>    /^https:\/\/(?:www\.)?(?:x\.com|twitter\.com)\/[^/?#]+\/status\/([0-9]+)(?:[/?#].*)?$/
+>    ```
+>
+> 3. Set the replacement to:
+>
+>    ```text
+>    https://unrollnow.com/status/$1
+>    ```
+>
+> 4. Open any `x.com/<user>/status/<id>` link. It should land on
+>    `unrollnow.com/status/<id>`.
+>
+> The rule matches `x.com` and `twitter.com` status links only. Profiles,
+> search, and the home timeline are untouched.
+>
+> If you installed the old extension, remove it at `chrome://extensions`.
+
+---
+
+## Legacy documentation
+
+The rest of this file describes the retired extension. It is kept for
+reference only.
+
 A tiny Chrome/Chromium extension that redirects public X/Twitter status URLs
 to the corresponding [Twitter Thread](https://twitter-thread.com) reader —
 zero clicks. Visit an `x.com/<user>/status/<id>` link and it opens directly in
